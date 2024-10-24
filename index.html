@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Jamones - Calidad y Tradición</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Tienda de Jamones</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#carrito"><img src="carrito-icono.png" alt="Carrito" width="30"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Los Mejores Jamones para tu Paladar</h2>
+        <p>Calidad y tradición en cada pieza</p>
+        <button onclick="window.location.href='#productos'">Descubre Nuestros Productos</button>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="productos">
+        <h2>Nuestros Jamones</h2>
+        <p>Descubre nuestra selección exclusiva de jamones ibéricos y serranos, todos elaborados con los más altos estándares de calidad para asegurar un sabor y textura incomparables.</p>
+        
+        <!-- Primer Producto -->
+        <div class="producto-item">
+            <img src="https://via.placeholder.com/300" alt="Jamón ibérico de bellota">
+            <h3>Jamón Ibérico de Bellota</h3>
+            <p>Este jamón procede de cerdos alimentados con bellotas durante la montanera. Su carne es jugosa, con un sabor profundo y persistente que refleja el equilibrio perfecto entre la grasa y la carne.</p>
+            <ul>
+                <li>Curación: 36 meses</li>
+                <li>Región: Jabugo, España</li>
+                <li>Peso: 7.5 kg</li>
+            </ul>
+            <span class="precio">€250,00</span>
+            <button>Comprar</button>
+        </div>
+
+        <!-- Segundo Producto -->
+        <div class="producto-item">
+            <img src="https://via.placeholder.com/300" alt="Jamón Serrano">
+            <h3>Jamón Serrano Gran Reserva</h3>
+            <p>El jamón serrano Gran Reserva ha sido curado durante al menos 18 meses en condiciones óptimas, lo que le otorga su sabor suave y delicado, ideal para todo tipo de paladares.</p>
+            <ul>
+                <li>Curación: 18 meses</li>
+                <li>Región: Teruel, España</li>
+                <li>Peso: 8 kg</li>
+            </ul>
+            <span class="precio">€150,00</span>
+            <button>Comprar</button>
+        </div>
+
+        <!-- Tercer Producto -->
+        <div class="producto-item">
+            <img src="https://via.placeholder.com/300" alt="Paleta Ibérica">
+            <h3>Paleta Ibérica</h3>
+            <p>Una opción más accesible pero igual de deliciosa. Esta paleta ibérica tiene un sabor intenso con un toque de dulzura que la hace irresistible.</p>
+            <ul>
+                <li>Curación: 24 meses</li>
+                <li>Región: Salamanca, España</li>
+                <li>Peso: 5.5 kg</li>
+            </ul>
+            <span class="precio">€120,00</span>
+            <button>Comprar</button>
+        </div>
+    </section>
+
+    <!-- Sección de Nosotros -->
+    <section id="nosotros" class="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>En <strong>Tienda de Jamones</strong>, llevamos más de 50 años seleccionando los mejores jamones ibéricos y serranos de España. Nuestro compromiso con la calidad y la tradición nos ha convertido en referentes en la distribución de jamones gourmet.</p>
+        <p>Ubicados en el corazón de la sierra española, trabajamos estrechamente con pequeños productores que respetan los métodos tradicionales de curación y garantizan productos de excelencia. Creemos que cada jamón es una obra de arte, resultado del cuidado y esmero en cada etapa del proceso.</p>
+        <img src="https://via.placeholder.com/600x300" alt="Bodega de jamones">
+        <blockquote>"La excelencia no es un acto, sino un hábito. Y nuestro hábito es entregar siempre lo mejor a nuestros clientes." - Fundador de Tienda de Jamones</blockquote>
+    </section>
+
+    <!-- Blog / Recetas -->
+    <section id="blog" class="blog">
+        <h2>Recetas y Consejos</h2>
+        <div class="articulo">
+            <h3>Cómo Cortar un Jamón Ibérico Perfectamente</h3>
+            <p>Aprende los secretos del corte perfecto para disfrutar al máximo de tu jamón ibérico. Un buen corte resalta el sabor y la textura de cada loncha.</p>
+            <a href="#">Leer más</a>
+        </div>
+        <div class="articulo">
+            <h3>Maridajes Ideales: Jamón Ibérico y Vino</h3>
+            <p>Te mostramos las mejores combinaciones de vinos para acompañar tu jamón ibérico. Descubre cómo potenciar los sabores y disfrutar de una experiencia gourmet.</p>
+            <a href="#">Leer más</a>
+        </div>
+        <div class="articulo">
+            <h3>¿Cómo se elabora un Jamón Serrano?</h3>
+            <p>Te contamos el proceso artesanal que sigue un jamón serrano desde la selección de la carne hasta su curación final. Cada paso es crucial para obtener un producto de alta calidad.</p>
+            <a href="#">Leer más</a>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta, comentario o necesitas más información sobre nuestros productos, no dudes en contactarnos.</p>
+        <form action="enviar-formulario.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="info-contacto">
+            <p><strong>Dirección:</strong> Calle de los Jamones, 123, Madrid, España</p>
+            <p><strong>Teléfono:</strong> +34 912 345 678</p>
+            <p><strong>Email:</strong> contacto@tiendadejamones.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tienda de Jamones. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+</html>
